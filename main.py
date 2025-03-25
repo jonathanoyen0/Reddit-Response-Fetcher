@@ -1,6 +1,12 @@
 import requests
 import pandas as pd
 
+#Uses a file named 'pw.txt' to store the values 
+def get_oath_token():
+    CLIENT_ID = ""
+    CLIENT_SECRET = ""
+    USER_AGENT = ""
+    
 
 def get_random_post(subreddit: str):
     url = f"https://www.reddit.com/r/{subreddit}/new.json"
