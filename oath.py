@@ -10,7 +10,7 @@ def check_current_token(token_file):
         return False
 
 #Uses a file named 'pw.json' and to store the values 
-def get_oath_token():
+def get_oauth_token():
     #Checking to see if we even need token
     token_file = json.load(open("oath_token.json", 'r+'))
     if (check_current_token(token_file=token_file)):
