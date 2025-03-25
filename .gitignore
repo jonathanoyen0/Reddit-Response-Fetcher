@@ -172,3 +172,8 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+#To ignore the text file that I am using to store sensitive info
+pw.json
+secrets.json
