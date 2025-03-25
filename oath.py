@@ -38,4 +38,3 @@ def get_oath_token():
         print("Error: ", e)
         return None
 
-get_oath_token()
