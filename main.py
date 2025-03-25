@@ -38,4 +38,3 @@ def get_random_post(subreddit: str):
         return None
 
 
-get_oath_token()
