@@ -25,12 +25,11 @@ def get_oauth_token():
         response = requests.post('https://www.reddit.com/api/v1/access_token', auth=auth, data=data, headers=headers)
         if(response.status_code == 200):
             print("Got oath token")
-            response = response.json()
             token_file["token"] = response["access_token"]
             token_file["time_created"] = time.time()
             token_file["lifetime"] = response["expires_in"]
             json.dump(token_file, open("oath_token.json", 'w'), indent=4)
-            return response
+            return response.json()
         else:
             print("Error: ", response.status_code)
             return None
