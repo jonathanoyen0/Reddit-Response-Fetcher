@@ -11,5 +11,3 @@ for i in range(1):
     post = get_random_post(id=id).json()
     id = post["data"]["after"]
 
-
-
